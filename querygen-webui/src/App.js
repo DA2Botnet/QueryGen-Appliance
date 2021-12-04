@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { NavigationBar } from './components/NavigationBar';
 import { Home } from './Home';
 import { About } from './About';
+import { Queries } from './Queries'
+import { Settings } from './Settings'
 import { NoMatch } from './NoMatch';
 import Sidebar from './components/Sidebar';
 
@@ -21,6 +23,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route component={NoMatch} />
+          <Route path="/queries" component={Queries} />
+          <Route path="/settings" component={Settings} />
         </Switch>
       </Router>
     </React.Fragment>
