@@ -20,8 +20,8 @@ class SideNav extends React.Component {
             activePath: props.location.pathname,
             items: [
                 {
-                    path: '/settings', /* path is used as id to check which NavItem is active basically */
-                    name: 'Settings',
+                    path: '/Settings', /* path is used as id to check which NavItem is active basically */
+                    name: 'settings',
                     css: 'fa fa-cog',
                     key: 1 /* Key is required, else console throws error. Does this please you Mr. Browser?! */
                 },
@@ -30,12 +30,6 @@ class SideNav extends React.Component {
                     name: 'Queries',
                     css: 'fa fa-search',
                     key: 2
-                },
-                {
-                    path: '/NoMatch',
-                    name: 'NoMatch',
-                    css: 'fas fa-hashtag',
-                    key: 3
                 }
               ]
         }
